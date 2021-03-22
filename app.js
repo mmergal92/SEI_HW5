@@ -16,6 +16,8 @@ $(() => {
    $container.append($h3);
    const $h4 = $('<h4>').prop("class","dog").text('Bruno');
    $container.append($h4);
+   const $h4a = $('<h4>').text('Wand');
+   $container.append($h4a);
    const $ul = $('<ul>').attr('storage', 'trunk');
    $container.append($ul);
    const $li1 = $('<li>').text('beer better');
@@ -90,5 +92,10 @@ $table.append($('<tr>')
 .append($('<td>').append("Friday"))
 .append($('<td>').append("Quidditch practice"))
 )
-
+$h4a.remove();
+$li1.remove();
+const $h4b = $('<h4>').text('new wand').css('color', 'pink')
+$h4.append($h4b);
+//$h4.remove();
 });
+//couldn't remove the pet and add it back without removing the wand. Tried different methods of placing the wand in to fix it and coudn't find the right one.
