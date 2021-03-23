@@ -20,7 +20,7 @@ $(() => {
    $container.append($h4a);
    const $ul = $('<ul>').attr('storage', 'trunk');
    $container.append($ul);
-   const $li1 = $('<li>').text('beer better');
+   const $li1 = $('<li>').text('butter beer');
    $ul.append($li1);
    const $li2 = $('<li>').prop("class","secret").text('invisibility cloak');
    $ul.append($li2);
@@ -101,5 +101,10 @@ $ul.hide("slow").delay("2000");
 $ul.show("slow");
 $li5.attr("class","cabbage");
 $li5.removeAttr("class","cabbage");
+$h5.text("Fall 2018");
+$ul.prepend('<li> Butter Beer </li>');
+$ul.attr('storage','chest');
+$('.secret').css('color','purple')
+$h2.css('color','chartreuse')
 });
 //couldn't remove the pet and add it back without removing the wand. Tried different methods of placing the wand in to fix it and coudn't find the right one.
