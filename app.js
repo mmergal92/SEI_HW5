@@ -97,5 +97,9 @@ $li1.remove();
 const $h4b = $('<h4>').text('new wand').css('color', 'pink')
 $h4.append($h4b);
 //$h4.remove();
+$ul.hide("slow").delay("2000");
+$ul.show("slow");
+$li5.attr("class","cabbage");
+$li5.removeAttr("class","cabbage");
 });
 //couldn't remove the pet and add it back without removing the wand. Tried different methods of placing the wand in to fix it and coudn't find the right one.
